@@ -1,24 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
+import Button from 'react-bootstrap/Button';
+import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <h1>Recomendador de Campañas</h1>
+      </header>
+      <nav>
+        <li>Configuracion</li>
+        <li>Analitica</li>
+        <li>Cuentas</li>
+      </nav>
+      <article>
+        <ButtonToolbar>
+        <Button>Campaña 1</Button>
+        <Button>Campaña 2</Button>
+        <Button>Campaña 3</Button>
+        </ButtonToolbar>
+      <p className="Elemento">Stadium, Arena & Sports Venue</p>
+        <p>Beauty, Cosmetic & Personal Care</p>
+        <p>Food & Beverage Company</p>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </article>
     </div>
   );
 }
